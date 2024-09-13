@@ -17,7 +17,7 @@ const generateWord = (n) => {
 
 
 const generatePara = () => {
-    const numOfWords = input.value;
+    let numOfWords = input.value;
     const para = document.createElement("p");
     let text = "";
 
