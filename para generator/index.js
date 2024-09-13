@@ -1,7 +1,6 @@
 const input = document.getElementById("words");
 const container = document.querySelector(".container");
 
-let numOfWords;
 
 const generateWord = (n) => {
     let text = "";
@@ -18,7 +17,8 @@ const generateWord = (n) => {
 
 
 const generatePara = () => {
-    numOfWords = input.value;
+    const numOfWords = input.value;
+    const para = document.createElement("p");
     let text = "";
 
     while(numOfWords>0)
@@ -29,12 +29,9 @@ const generatePara = () => {
         numOfWords--;
     }
     
-
-    const para = document.createElement("p");
-    para.setAttribute("class","paras");
     para.innerText = text;
+    para.setAttribute("class","paras");
 
     container.append(para);
-    
 }
     
