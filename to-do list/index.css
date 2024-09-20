@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:#ddfff7;
+}
+
+.container{
+    background: #93e1d8;
+    width: 70%;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    height: 100%;
+    margin: auto;
+}
+
+h1{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#title,#description,button{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    font: 100 1.1rem font-family ;
+}
+
+#add-btn{
+    cursor: pointer;
+    background:black;
+    color: white;
+    transition: all 0.25s;
+    width: 30%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+#add-btn:hover{
+    background:#396872 ;
+}
+
+.task{
+    background: #ffdde5d2;
+    padding: 30px;
+    margin: 10px;
+    font: 100 1.1rem sans-serif;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin: 2vmax;
+}
+.task p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.task > div {
+    width: 100%;
+}
+
+.delete-btn {
+    background: crimson;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
